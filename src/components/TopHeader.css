@@ -1,0 +1,32 @@
+
+.ant-menu-item {
+    background-color: transparent !important;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #001529;
+}
+
+.menu {
+    flex: 1; 
+}
+
+.menu-item {
+    font-style: italic; 
+  }
+  
+  .menu-item .bold-italic {
+    font-weight: bold;
+  }
+
+
+.sign-in {
+    font-weight: bold; 
+    font-size: 14px;
+    color: white; 
+  }
+  
