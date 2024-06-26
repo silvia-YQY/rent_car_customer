@@ -22,7 +22,8 @@ export default function ContentSection() {
     useEffect(() => {
         axios.get('https://carrentalsystem-backend.azurewebsites.net/api/Cars/all')
             .then((res) => {
-                setProducts(res.data);
+                const availableProducts = res.data.filter(product => product.Available_Now === true);
+                setProducts(availableProducts);
                 setLoading(false);
             })
             .catch((error) => {
@@ -65,9 +66,9 @@ export default function ContentSection() {
         form.setFieldsValue({
             carMake: product.Make,
             carModel: product.Model,
-            startDate: null, // 清空开始日期
-            endDate: null, // 清空结束日期
-            fee: 0, // 初始费用设为0
+            startDate: null, 
+            endDate: null, 
+            fee: 0,
         });
     };
 
@@ -88,7 +89,8 @@ export default function ContentSection() {
             "EndDate": endDate,
             "Fee": fee,
             "CarMake": carMake,
-            "CarModel": carModel
+            "CarModel": carModel,
+            "Status": 0
         };
         axiosInstance.post('/api/Rentals', postData)
         .then((response) => {
