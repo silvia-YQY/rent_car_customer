@@ -156,7 +156,8 @@ export default function ContentSection() {
             <div style={{ height: '650px', marginBottom: '20px', marginTop: '1px', overflow: 'hidden' }}>
                 <img src={bannerImage} alt="Banner" style={{ width: '100%', objectFit: 'cover' }} />
                 <div style={{ position: 'absolute', top: '30%', left: '50%', transform: 'translate(-50%, -50%)', color: 'white', zIndex: '10' }}>
-                    <h1 style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '10px' }}>NEW ZEALAND CAR HIRE & DRIVING YOUR HOLIDAYS</h1>
+                    <h1 style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px' }}>NEW ZEALAND CAR HIRE & DRIVING YOUR HOLIDAYS</h1>
+                    <h2 style={{ fontSize: '24px', fontWeight: 'bold', marginTop: '0px', marginBottom: '10px' }}>TAKEPAHI WAHINE MOTUHAKE AOTEAROA & TE TAUTU O Ō KIRIHIMETE</h2>
                     <div style={{ maxWidth: '500px', margin: '0 auto' }}>
                         <Search placeholder="Search cars..." enterButton onSearch={handleSearch} style={{ width: '100%', height: '80px' }} />
                     </div>

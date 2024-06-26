@@ -251,9 +251,12 @@ export default function TopHeader() {
                 style={{ backdropFilter: 'blur(10px)', background: 'rgba(255, 255, 255, 0.8)' }}
             >
                 <div className="contact-info">
-                    <p><strong>Email:</strong> example@example.com</p>
-                    <p><strong>Phone:</strong> +1234567890</p>
-                    <p><strong>Address:</strong> 123 DriveWise Street, City, Country</p>
+                    <p><strong>Email:</strong> rentCar@driveWise.com</p>
+                    <p><strong>Īmēra:</strong> rentCar@driveWise.com</p>
+                    <p><strong>Phone:</strong> +0222220801</p>
+                    <p><strong>Waea:</strong> +0222220801</p>
+                    <p><strong>Address:</strong> 1 Queen Street, Auckland CBD, NEW ZEALAND</p>
+                    <p><strong>Wāhitaua:</strong> 1 Tīnana o te Kuīni, Tāmaki Makaurau Pae Pūtea, AOTEAROA HOU</p>
                     <p style={{ marginTop: 20, fontSize: 14 }}>For inquiries and support, please contact us via the provided information.</p>
                 </div>
             </Drawer>
